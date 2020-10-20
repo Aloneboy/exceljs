@@ -1300,6 +1300,16 @@ export interface Worksheet {
 	mergeCellsWithoutStyle(v: [string, string, string]): void;
 	mergeCellsWithoutStyle(v: [number, number, number, number]): void;
 	mergeCellsWithoutStyle(v: [number, number, number, number, string]): void;
+	mergeCellsWithoutCheck(): void;
+	mergeCellsWithoutCheck(v: Range): void;
+	mergeCellsWithoutCheck(v: string): void;
+	mergeCellsWithoutCheck(v: Location): void;
+	mergeCellsWithoutCheck(top: number, left: number, bottom: number, right: number, sheetName?: string): void;
+	mergeCellsWithoutCheck(tl: string, br: string, sheetName?: string): void;
+	mergeCellsWithoutCheck(v: [string, string]): void;
+	mergeCellsWithoutCheck(v: [string, string, string]): void;
+	mergeCellsWithoutCheck(v: [number, number, number, number]): void;
+	mergeCellsWithoutCheck(v: [number, number, number, number, string]): void;
 
 	/**
 	 * unmerging the cells breaks the style links
